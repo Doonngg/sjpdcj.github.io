@@ -1,0 +1,544 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #111111;
+}
+.zhu{
+	width: 320px;
+	height: 568px;
+}
+.head {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	z-index: 5;
+}
+
+
+.bar1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -124px;
+	height: auto;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(36,36,36);
+}
+
+#star{
+	width: 28px;
+	height: 28px;
+	margin-right: 24px;
+}
+#starTips{
+	position: fixed;
+	top: 200px;
+	left: 80px;
+	right: 80px;
+	display: block;
+	background-color: #FFFFFF;
+	border: solid 1px #D5D5D5;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+	padding: 8px;
+	text-align: center;
+	font-size:16px;
+	letter-spacing:4px;
+	color: #707070;
+	display: none;
+}
+.bar1Top {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 16px;
+	color: #707070;
+}
+.bar1Bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+
+.webList {
+	width: 33%;
+	height: 32px;
+	padding-left: 8px;
+	outline: none;
+	border: 0;
+	border-radius: 16px 0 0 16px;
+	font-size: 13px;
+	color: #707070;
+	background-color: #111111;
+}
+/*弹幕数量*/
+#dmNum {
+	width: 33%;
+	height: 32px;
+	background-color: #111111;
+	border-radius: 0 16px 16px 0;
+	color: #707070;
+	padding-left: 8px;
+	line-height: 32px;
+	font-size: 13px;
+}
+#olNum{
+	width: 33%;
+	height: 32px;
+	background-color: #111111;
+	color: #707070;
+	line-height: 32px;
+	padding-left: 8px;
+	font-size: 13px;
+}
+h1 {
+	font-size: 1.5rem;
+	line-height: 24px;
+}
+
+
+
+/*弹幕显示区*/
+ul {
+	position: absolute;
+	top: 64px;
+	right: 0;
+	left: 0;
+	padding: 16px;
+	max-height: 440px;
+	list-style: none;
+	overflow: auto;
+	word-break: break-all;
+}
+
+
+#tab1 {
+	
+	top: 0px;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+ul::-webkit-scrollbar {
+	width: 2px;
+}
+
+ul::-webkit-scrollbar-thumb {
+	background-color: #F6F6F6;
+}
+
+
+#tips {
+	position: fixed;
+	top: 200px;
+	left: 80px;
+	right: 80px;
+	display: block;
+	background-color: #FFFFFF;
+	border: solid 1px #D5D5D5;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+	padding: 8px;
+	text-align: center;
+	font-size:16px;
+	letter-spacing:2px;
+	color: rgba(0,0,0,87%);
+	display: none;
+	z-index: 99;
+}
+
+#fold{
+	position: fixed;
+	top:32px;
+	right: 16px;
+	z-index: 9;
+	width: 28px;
+	height: 28px;
+	background: url(../img/fold.png) no-repeat;
+	background-size: 28px 28px;
+	background-position:center;
+}
+#fold img{
+	
+}
+.input {
+	position: fixed;
+	bottom: 16px;
+	left: 16px;
+	right: 16px;
+	background-color: #FFFFFF;
+	z-index: 10;
+}
+
+/*输入和发送按钮盒子*/
+.input-top {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	bottom: 72px;
+	left: 16px;
+	right: 16px;
+	height: 56px;
+	z-index: 3;
+}
+
+/*弹幕输入框*/
+#text {
+	width: 50%;
+	height: 100%;
+	border: none;
+	border-radius: 0;
+	resize: none;
+	outline: none;
+	font-size: 14px;
+	text-align: center;
+	line-height: 56px;
+	color: #707070;
+	background-color: #181818;
+}
+
+/*发送按钮*/
+#button {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #242424;
+}
+
+#emoji,
+#img,
+#send {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+#emoji:hover,
+#img:hover,
+#send:hover {
+	background-color: #E5E5E5;
+}
+
+#emoji img,
+#img img,
+#send img {
+	width: 28px;
+	height: 28px;
+}
+
+
+/*弹幕设置和折叠按钮的盒子*/
+.input-center {
+	height: 56px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+/*底部四个按钮*/
+.dock,
+#home,
+#oneself {
+	height: 100%;
+	width: 25%;
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #242424;
+}
+
+#home img,
+.dock img {
+	width: 28px;
+	height: 28px;
+}
+
+#oneself img {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+}
+
+/*发出弹幕的盒子*/
+.dmLi {
+	background-image: linear-gradient(-90deg, rgb(24,24,24) 1px,
+	 rgba(0, 0, 0, 0) 1px), 
+	 linear-gradient(360deg,rgb(24,24,24) 1px, 
+	 rgba(0, 0, 0, 0) 1px);
+	background-size: 106px 106px;
+	width: 106px;
+	height: 106px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.dmLi img{
+	min-width: 106px;
+	max-width: 150px;
+	height: auto;
+}
+
+/*弹幕盒子左*/
+.dmBottom {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+/*弹幕盒子右*/
+.dmTop {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*弹幕时间和id*/
+.dmTime,
+.dmId {
+	color: #707070;
+	font-size: 12px;
+	margin-top: 8px;
+}
+
+/*弹幕内容*/
+.dmText {
+	width: 100%;
+	padding: 8px;
+	font-size: 14px;
+	color: #D3D3D3;
+	text-align: left;
+}
+
+/*原有弹幕的头像样式*/
+.dmImg {
+	width: 32px;
+	height: 32px;
+	margin-top: 8px;
+	border-radius: 50%;
+}
+
+/*发送按钮下面的盒子*/
+.my {
+	width: 100%;
+	position: relative;
+	display: none;
+	background-color: #181818;
+}
+
+/*个人信息盒子*/
+.personal-information {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding: 16px;
+	padding-bottom: 0;
+}
+
+/*头像*/
+#tx img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+
+/*昵称和邮箱的盒子*/
+#name {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 8px;
+}
+
+#tishi {
+	font-size: 16px;
+	color: #707070;
+	margin-left: 8px;
+}
+
+#suihe {
+	font-size: 13px;
+	color: #707070;
+	margin-left: 16px;
+	margin-top: 16px;
+}
+
+#suihe span {
+	color: #FFFFFF;
+}
+
+/*昵称*/
+#id {
+	font-size: 18px;
+	color: #fff;
+}
+
+/*邮箱*/
+#mail {
+	font-size: 13px;
+	color: #fff;
+}
+
+/*三个数据的盒子*/
+#data {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 16px;
+	padding-bottom: 0;
+}
+
+#data1,
+#data2,
+#data3 {
+	flex-grow: 1;
+	height: auto;
+	line-height: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+}
+
+#data3 img,
+#data2 img,
+#data1 img {
+	width: 24px;
+	height: 24px;
+}
+
+#num1,
+#num2,
+#num3 {
+	margin-left: 6px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+
+
+/*账号设置登出的盒子*/
+#tabs {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px;
+}
+
+/*账号设置*/
+#idSet {
+	color: #7AD7C6;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#idSet:hover {
+	text-decoration: underline;
+}
+
+/*退出登录*/
+#exit {
+	color: #707070;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#set:hover {
+	text-decoration: underline;
+}
+
+#shade{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 11;
+	display: none;
+}
+/*弹幕详细*/
+.detail{
+	position: fixed;
+	top: 124px;
+	left: 64px;
+	height: auto;
+	width: 192px;
+	background-color: #FFFFFF;
+	z-index: 12;
+}
+.detailTop{
+	padding: 16px;
+	font-size: 16px;
+	width: 192px;
+	height: 160px;
+	color: #FFFFFF;
+	background-color: #242424;
+	border: 1px solid #181818;
+}
+.detailBottom{
+	display: flex;
+	flex-direction: column;
+	background-color: #181818;
+	color: #707070;
+}
+.detailBottom1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 8px;
+	font-size: 14px;
+}
+.detailBottom1 a{
+	text-decoration: none;
+	color: #7AD7C6;
+}
+.detailBottom2{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	padding: 8px;
+	align-items: center;
+	font-size: 16px;
+}
+#detailTx{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 8px;
+}

@@ -1,0 +1,26 @@
+{
+	"manifest_version" : 2,
+	"name": "世界频道",
+	"version": "1.0.0",
+	"description": "网页弹幕",
+	"icons":
+	{
+		"128" : "img/icon.png"
+	},
+	"background":
+	{
+		"scripts": ["js/background.js"]
+	},
+	"browser_action": 
+	{
+		"default_icon": "img/icon.png",
+		"default_title": "世界频道",
+		"default_popup": "index.html"
+	},
+	"permissions":
+	[
+	        "tabs",
+			"https://www.baidu.com/*"
+	    ],
+	"homepage_url": "https://weibo.com/u/6183090930?topnav=1&wvr=6&topsug=1&is_hot=1"
+}
