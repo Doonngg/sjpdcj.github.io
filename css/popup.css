@@ -281,8 +281,7 @@ ul::-webkit-scrollbar-thumb {
 	height: auto;
 }
 .amplification{
-	padding: 16px;
-	width: 100%;
+	width: 50%;
 	height: auto;
 	display: none;
 	overflow: auto;
@@ -468,10 +467,11 @@ ul::-webkit-scrollbar-thumb {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.7);
 	z-index: 11;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	display: none;
 }
 /*弹幕详细*/
