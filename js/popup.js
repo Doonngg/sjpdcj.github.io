@@ -164,9 +164,13 @@ $(function() {
 		$(".detailTop").text($(this).find("p").text());
 	})
 	
-	//遮罩关闭
-	$("#shade").click(function(){
-		$("#shade").hide();
+	//遮罩关闭(阻止子元素继承父元素点击事件)
+	$("#shade").click(function(e){
+		if(e.target!=this) return;
+		else {
+		     $("#shade").hide();
+		    }
+		
 	})
 
 	//tab切换
