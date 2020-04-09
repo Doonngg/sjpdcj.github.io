@@ -69,21 +69,22 @@ $(function() {
 	$("#star").click(function() {
 		if (starFlag == 0) {
 			$("#star").attr("src", "img/starSelect.png");
-			$("#starTips").css("display", "block");
-			$("#starTips").animate({bottom:'128px'},200);
+			$("#tips").text("已推荐").show();
+			$("#tips").css("display", "block");
+			$("#tips").animate({bottom:'128px'},200);
 			setTimeout(function() {
-				$("#starTips").animate({bottom:'96px'},200);
+				$("#tips").animate({bottom:'96px'},200);
 			}, 1000);
-			$("#starTips").text("已推荐").show();
 			starFlag = 1;
 		} else {
 			$("#star").attr("src", "img/star.png");
-			$("#starTips").css("display", "block");
-			$("#starTips").animate({bottom:'128px'},200);
+			$("#tips").text("已取消").show();
+			$("#tips").css("display", "block");
+			$("#tips").animate({bottom:'128px'},200);
 			setTimeout(function() {
-				$("#starTips").animate({bottom:'96px'},200);
+				$("#tips").animate({bottom:'96px'},200);
 			}, 1000);
-			$("#starTips").text("已取消").show();
+			
 			starFlag = 0;
 		};
 	})
@@ -115,6 +116,7 @@ $(function() {
 		}
 		//判断输入长度
 		if ($("#text").val().length == 0 || /^\s+$/.test($("#text").val())) {
+			$("#tips").text("内容不能为空").show();
 			$("#tips").css("display", "block");
 			$("#tips").animate({bottom:'128px'},200);
 			setTimeout(function() {

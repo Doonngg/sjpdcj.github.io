@@ -41,20 +41,7 @@ body {
 	height: 28px;
 	margin-right: 24px;
 }
-#starTips{
-	position: fixed;
-	bottom: 96px;
-	left: 16px;
-	right: 16px;
-	background-color: #7AD7C6;
-	height: 32px;
-	line-height: 32px;
-	padding-left: 8px;
-	text-align: left;
-	font-size:13px;
-	color: #FFFFFF;
-	display: none;
-}
+
 .bar1Top {
 	display: flex;
 	width: 100%;
