@@ -157,12 +157,12 @@ $(function() {
 	//弹幕详细内容
 	$("#tab1 li").click(function(){
 		let dmImg =  $(this).children().prop("tagName");
-		$(".amplification").css("width","50%");
+		$(".amplification").css("width","90%");
 		$(".dmImgClick").attr("src","");
 		if(dmImg == "IMG"){
 			$(".detail").hide();
 			$("#shade").css("display","flex");
-			$(".amplification").animate({width:'100%'},100).show();
+			$(".amplification").animate({width:'100%'},150).show();
 			$(".dmImgClick").attr("src",$(this).children().attr("src"));
 		}else{
 			$(".amplification").hide();

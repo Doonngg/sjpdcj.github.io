@@ -281,7 +281,7 @@ ul::-webkit-scrollbar-thumb {
 	height: auto;
 }
 .amplification{
-	width: 50%;
+	width: 90%;
 	height: auto;
 	display: none;
 	overflow: auto;
