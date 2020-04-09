@@ -276,10 +276,19 @@ ul::-webkit-scrollbar-thumb {
 	align-items: center;
 	overflow: hidden;
 }
-.dmLi img{
-	min-width: 106px;
-	max-width: 150px;
+.dmImg{
+	width: 150px;
 	height: auto;
+}
+.amplification{
+	padding: 16px;
+	width: 100%;
+	height: auto;
+	display: none;
+	overflow: auto;
+}
+.dmImgClick{
+	width: 100%;
 }
 
 /*弹幕盒子左*/
@@ -313,14 +322,6 @@ ul::-webkit-scrollbar-thumb {
 	font-size: 14px;
 	color: #D3D3D3;
 	text-align: left;
-}
-
-/*原有弹幕的头像样式*/
-.dmImg {
-	width: 32px;
-	height: 32px;
-	margin-top: 8px;
-	border-radius: 50%;
 }
 
 /*发送按钮下面的盒子*/
@@ -469,17 +470,17 @@ ul::-webkit-scrollbar-thumb {
 	height: 100%;
 	background-color: rgba(0,0,0,0.5);
 	z-index: 11;
+	display: flex;
+	align-items: center;
 	display: none;
 }
 /*弹幕详细*/
 .detail{
-	position: fixed;
-	top: 124px;
-	left: 64px;
 	height: auto;
 	width: 192px;
 	background-color: #FFFFFF;
 	z-index: 12;
+	display: none;
 }
 .detailTop{
 	padding: 16px;

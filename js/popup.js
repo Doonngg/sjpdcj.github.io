@@ -155,9 +155,20 @@ $(function() {
 	
 	
 	//弹幕详细内容
-	$("#tab1 li").click(function(){
-		$("#shade").show();
-		$(".detailTop").text($(this).find("p").text());
+	$("#tab1 li").click(function(e){
+		console.log($(this).children().attr("src"));
+		let dmImg =  $(this).children().prop("tagName");
+		if(dmImg == "IMG"){
+			$(".detail").hide();
+			$("#shade").css("display","flex");
+			$(".amplification").show();
+			$(".dmImgClick").attr("src",$(this).children().attr("src"))
+		}else{
+			$(".amplification").hide();
+			$("#shade").css("display","flex");
+			$(".detail").show();
+			$(".detailTop").text($(this).find("p").text());
+		}
 	})
 	
 	//遮罩关闭(阻止子元素继承父元素点击事件)
