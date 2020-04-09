@@ -41,7 +41,7 @@ $(function() {
 	}) */
 	
 	
-	
+	//折叠
 	let foldFlag = 0;
 	$("#fold").click(function() {
 		if (foldFlag == 0) {
@@ -63,34 +63,29 @@ $(function() {
 		}
 
 	})
-
+	
+	//星
 	let starFlag = 0;
 	$("#star").click(function() {
 		if (starFlag == 0) {
 			$("#star").attr("src", "img/starSelect.png");
-			$("#starTips").show();
-			$("#starTips").animate({
-				top: '160px'
-			}, function() {
-				$("#starTips").hide();
-			});
-			$("#starTips").animate({
-				top: "200px"
-			}, 1);
+			$("#starTips").css("display", "block");
+			$("#starTips").animate({bottom:'128px'},200);
+			setTimeout(function() {
+				$("#starTips").animate({bottom:'96px'},200);
+			}, 1000);
+			$("#starTips").text("已推荐").show();
 			starFlag = 1;
 		} else {
 			$("#star").attr("src", "img/star.png");
+			$("#starTips").css("display", "block");
+			$("#starTips").animate({bottom:'128px'},200);
+			setTimeout(function() {
+				$("#starTips").animate({bottom:'96px'},200);
+			}, 1000);
 			$("#starTips").text("已取消").show();
-			$("#starTips").animate({
-				top: '160px'
-			}, function() {
-				$("#starTips").text("已推荐").hide();
-			});
-			$("#starTips").animate({
-				top: "200px"
-			}, 1);
 			starFlag = 0;
-		}
+		};
 	})
 
 	//dock栏头像
@@ -121,8 +116,9 @@ $(function() {
 		//判断输入长度
 		if ($("#text").val().length == 0 || /^\s+$/.test($("#text").val())) {
 			$("#tips").css("display", "block");
+			$("#tips").animate({bottom:'128px'},200);
 			setTimeout(function() {
-				$("#tips").css("display", "none");
+				$("#tips").animate({bottom:'96px'},200);
 			}, 1000);
 			return;
 		}

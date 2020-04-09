@@ -43,18 +43,16 @@ body {
 }
 #starTips{
 	position: fixed;
-	top: 200px;
-	left: 80px;
-	right: 80px;
-	display: block;
-	background-color: #FFFFFF;
-	border: solid 1px #D5D5D5;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-	padding: 8px;
-	text-align: center;
-	font-size:16px;
-	letter-spacing:4px;
-	color: #707070;
+	bottom: 96px;
+	left: 16px;
+	right: 16px;
+	background-color: #7AD7C6;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 8px;
+	text-align: left;
+	font-size:13px;
+	color: #FFFFFF;
 	display: none;
 }
 .bar1Top {
@@ -126,7 +124,6 @@ ul {
 
 
 #tab1 {
-	
 	top: 0px;
 	padding: 0;
 	display: flex;
@@ -145,20 +142,17 @@ ul::-webkit-scrollbar-thumb {
 
 #tips {
 	position: fixed;
-	top: 200px;
-	left: 80px;
-	right: 80px;
-	display: block;
-	background-color: #FFFFFF;
-	border: solid 1px #D5D5D5;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-	padding: 8px;
-	text-align: center;
-	font-size:16px;
-	letter-spacing:2px;
-	color: rgba(0,0,0,87%);
+	bottom: 96px;
+	left: 16px;
+	right: 16px;
+	background-color: #7AD7C6;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 8px;
+	text-align: left;
+	font-size:13px;
+	color: #FFFFFF;
 	display: none;
-	z-index: 99;
 }
 
 #fold{
