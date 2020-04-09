@@ -129,16 +129,17 @@ ul::-webkit-scrollbar-thumb {
 
 #tips {
 	position: fixed;
-	bottom: 96px;
+	bottom: 128px;
 	left: 16px;
 	right: 16px;
 	background-color: #7AD7C6;
-	height: 32px;
+	height: 0;
 	line-height: 32px;
 	padding-left: 8px;
 	text-align: left;
 	font-size:13px;
 	color: #FFFFFF;
+	overflow: hidden;
 	display: none;
 }
 
@@ -162,7 +163,6 @@ ul::-webkit-scrollbar-thumb {
 	left: 16px;
 	right: 16px;
 	background-color: #FFFFFF;
-	z-index: 10;
 }
 
 /*输入和发送按钮盒子*/
@@ -174,7 +174,6 @@ ul::-webkit-scrollbar-thumb {
 	left: 16px;
 	right: 16px;
 	height: 56px;
-	z-index: 3;
 }
 
 /*弹幕输入框*/
