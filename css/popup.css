@@ -67,13 +67,13 @@ body {
 	border-radius: 16px 0 0 16px;
 	font-size: 13px;
 	color: #707070;
-	background-color: #111111;
+	background-color: #181818;
 }
 /*弹幕数量*/
 #dmNum {
 	width: 33%;
 	height: 32px;
-	background-color: #111111;
+	background-color: #181818;
 	border-radius: 0 16px 16px 0;
 	color: #707070;
 	padding-left: 8px;
@@ -83,7 +83,7 @@ body {
 #olNum{
 	width: 33%;
 	height: 32px;
-	background-color: #111111;
+	background-color: #181818;
 	color: #707070;
 	line-height: 32px;
 	padding-left: 8px;

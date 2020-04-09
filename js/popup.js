@@ -155,14 +155,15 @@ $(function() {
 	
 	
 	//弹幕详细内容
-	$("#tab1 li").click(function(e){
-		$(".amplification").css("width","50%")
+	$("#tab1 li").click(function(){
 		let dmImg =  $(this).children().prop("tagName");
+		$(".amplification").css("width","50%");
+		$(".dmImgClick").attr("src","");
 		if(dmImg == "IMG"){
 			$(".detail").hide();
 			$("#shade").css("display","flex");
 			$(".amplification").animate({width:'100%'},100).show();
-			$(".dmImgClick").attr("src",$(this).children().attr("src"))
+			$(".dmImgClick").attr("src",$(this).children().attr("src"));
 		}else{
 			$(".amplification").hide();
 			$("#shade").css("display","flex");
