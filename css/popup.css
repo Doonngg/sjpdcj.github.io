@@ -102,7 +102,7 @@ ul {
 	top: 64px;
 	right: 0;
 	left: 0;
-	bottom: 128px;
+	max-height: 438px;
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
@@ -115,6 +115,7 @@ ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 ul::-webkit-scrollbar {
