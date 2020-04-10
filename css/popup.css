@@ -102,8 +102,7 @@ ul {
 	top: 64px;
 	right: 0;
 	left: 0;
-	padding: 16px;
-	max-height: 440px;
+	bottom: 128px;
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
