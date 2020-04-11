@@ -171,8 +171,8 @@ ul::-webkit-scrollbar-thumb {
 	flex-direction: row;
 	position: fixed;
 	bottom: 56px;
-	left: 0;
-	right: 0;
+	left: 16px;
+	right: 16px;
 	height: 56px;
 }
 
