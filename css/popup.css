@@ -130,8 +130,8 @@ ul::-webkit-scrollbar-thumb {
 #tips {
 	position: fixed;
 	bottom: 112px;
-	left: 0;
-	right: 0;
+	left: 16px;
+	right: 16px;
 	background-color: #7AD7C6;
 	height: 0;
 	line-height: 32px;
@@ -160,8 +160,8 @@ ul::-webkit-scrollbar-thumb {
 .input {
 	position: fixed;
 	bottom: 0px;
-	left: 0;
-	right: 0;
+	left: 16px;
+	right: 16px;
 	background-color: #FFFFFF;
 }
 
