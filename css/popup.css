@@ -462,8 +462,6 @@ ul::-webkit-scrollbar-thumb {
 	height: 100%;
 	background-color: rgba(0,0,0,0.7);
 	z-index: 11;
-	display: flex;
-	align-items: flex-start;
 	display: none;
 }
 

@@ -6,8 +6,8 @@ $(function() {
 	// document.oncontextmenu = function(){
 	//     event.returnValue = false;
 	// }
-	
-	
+
+
 	/* //判断网站是否在白名单
 	for (let i = 0; i < sjpdUrl.length; i++) {
 		chrome.tabs.query({
@@ -39,8 +39,8 @@ $(function() {
 	$("#data3").click(function() {
 
 	}) */
-	
-	
+
+
 	//折叠
 	let foldFlag = 0;
 	$("#fold").click(function() {
@@ -63,7 +63,7 @@ $(function() {
 		}
 
 	})
-	
+
 	//星
 	let starFlag = 0;
 	$("#star").click(function() {
@@ -71,18 +71,26 @@ $(function() {
 			$("#star").attr("src", "img/starSelect.png");
 			$("#tips").text("已推荐");
 			$("#tips").css("display", "block");
-			$("#tips").animate({height:'32px'},200);
+			$("#tips").animate({
+				height: '32px'
+			}, 200);
 			setTimeout(function() {
-				$("#tips").animate({height:'0px'},200);
+				$("#tips").animate({
+					height: '0px'
+				}, 200);
 			}, 1000);
 			starFlag = 1;
 		} else {
 			$("#star").attr("src", "img/star.png");
 			$("#tips").text("已取消");
 			$("#tips").css("display", "block");
-			$("#tips").animate({height:'32px'},200);
+			$("#tips").animate({
+				height: '32px'
+			}, 200);
 			setTimeout(function() {
-				$("#tips").animate({height:'0px'},200);
+				$("#tips").animate({
+					height: '0px'
+				}, 200);
 			}, 1000);
 			starFlag = 0;
 		};
@@ -112,13 +120,17 @@ $(function() {
 	$("#send").click(function() {
 		if ($("#text").val() == "输入内容") {
 			$("#text").val("");
-		}
+		};
 		//判断输入长度
 		if ($("#text").val().length == 0 || /^\s+$/.test($("#text").val())) {
 			$("#tips").text("内容不能为空").show();
-			$("#tips").animate({height:'32px'},200);
-			setTimeout(function() {
-				$("#tips").animate({height:'0px'},200);
+			$("#tips").animate({
+				height: '32px'
+			}, 200);
+			var timer = setTimeout(function() {
+				$("#tips").animate({
+					height: '0px'
+				}, 200);
 			}, 1000);
 			return;
 		}
@@ -148,55 +160,51 @@ $(function() {
 		$(".dmRight1 img").click(function() {
 			console.log("举报");
 		});
-		
-		
+
+
 	});
-	
-	
-	
+
+
+
 	//弹幕详细内容
-	$("#tab1 li").click(function(){
-		$("body").stop(true);
-		let dmImg =  $(this).children().prop("tagName");
-		$(".amplification").css("width","0");
-		$(".dmImgClick").attr("src","");
-		if(dmImg == "IMG"){
-			$("#shade").css("display","flex");
+	$("#tab1 li").click(function() {
+		let dmImg = $(this).children().prop("tagName");
+		if (dmImg == "IMG") {
+			$("#shade").show();
 			$(this).children().css({
-				"position":"fixed",
-				"z-index" : "100"
-				});
+				"position": "fixed",
+				"z-index": "100"
+			});
 			$(this).children().animate({
-				width:"100%",
-				left:"0",
-				top:"0"
-				},200);
-			
-		}else{
-			$(".amplification").hide();
-			$("#shade").css("display","flex");
-			$(".detail").animate({height:'243px'},200).show();
+				width: "100%",
+				left: "0",
+				top: "0"
+			}, 200);
+		} else {
+			$("#shade").show();
+			$(".detail").animate({
+				height: '243px'
+			}, 200).show();
 			$(".detailTop").text($(this).find("p").text());
 		}
-		
+
 	})
-	
+
 	//遮罩关闭(阻止子元素继承父元素点击事件)
-	$("#shade").click(function(e){
-		$("body").stop(true);
-		if(e.target!=this) return;
+	$("#shade").click(function(e) {
+		if (e.target != this) return;
 		else {
-		     $("#shade").hide();
-			 $(".detail").css("height","0")
-			 $(".dmImg").css({
-			 	"position":"relative",
-			 	"z-index" : "-1",
-				width:"",
-				left:"",
-				top:""
-			 	});
-		    }
-		
+			$("#shade").hide();
+			$(".detail").css("height", "0")
+			$(".dmImg").css({
+				"position": "relative",
+				"z-index": "-1",
+				width: "",
+				left: "",
+				top: ""
+			});
+		}
+
 	})
 
 	//tab切换
