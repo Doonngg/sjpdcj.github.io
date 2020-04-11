@@ -190,7 +190,7 @@ $(function() {
 			 $(".detail").css("height","0")
 			 $(".dmImg").css({
 			 	"position":"relative",
-			 	"z-index" : "0",
+			 	"z-index" : "-1",
 				width:"",
 				left:"",
 				top:""
