@@ -174,7 +174,7 @@ $(function() {
 		}else{
 			$(".amplification").hide();
 			$("#shade").css("display","flex");
-			$(".detail").show();
+			$(".detail").animate({height:'243px'},300).show();
 			$(".detailTop").text($(this).find("p").text());
 		}
 		
@@ -185,6 +185,7 @@ $(function() {
 		if(e.target!=this) return;
 		else {
 		     $("#shade").hide();
+			 $(".detail").css("height","0");
 			 $(".dmImg").css({
 			 	"position":"relative",
 			 	"z-index" : "0",
