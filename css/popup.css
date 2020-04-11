@@ -159,7 +159,7 @@ ul::-webkit-scrollbar-thumb {
 }
 .input {
 	position: fixed;
-	bottom: 16px;
+	bottom: 0px;
 	left: 16px;
 	right: 16px;
 	background-color: #FFFFFF;
@@ -170,7 +170,7 @@ ul::-webkit-scrollbar-thumb {
 	display: flex;
 	flex-direction: row;
 	position: fixed;
-	bottom: 72px;
+	bottom: 56px;
 	left: 16px;
 	right: 16px;
 	height: 56px;
