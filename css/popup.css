@@ -467,15 +467,6 @@ ul::-webkit-scrollbar-thumb {
 	display: none;
 }
 
-.amplification{
-	width: 0;
-	height: auto;
-	display: none;
-	overflow: auto;
-}
-.dmImgClick{
-	width: 100%;
-}
 
 /*弹幕详细*/
 .detail{
