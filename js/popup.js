@@ -156,6 +156,7 @@ $(function() {
 	
 	//弹幕详细内容
 	$("#tab1 li").click(function(){
+		$("body").stop(true);
 		let dmImg =  $(this).children().prop("tagName");
 		$(".amplification").css("width","0");
 		$(".dmImgClick").attr("src","");
@@ -182,6 +183,7 @@ $(function() {
 	
 	//遮罩关闭(阻止子元素继承父元素点击事件)
 	$("#shade").click(function(e){
+		$("body").stop(true);
 		if(e.target!=this) return;
 		else {
 		     $("#shade").hide();
