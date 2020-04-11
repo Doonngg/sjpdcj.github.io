@@ -102,7 +102,7 @@ ul {
 	top: 64px;
 	right: 0;
 	left: 0;
-	max-height: 438px;
+	max-height: 456px;
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
@@ -129,7 +129,7 @@ ul::-webkit-scrollbar-thumb {
 
 #tips {
 	position: fixed;
-	bottom: 128px;
+	bottom: 112px;
 	left: 16px;
 	right: 16px;
 	background-color: #7AD7C6;
