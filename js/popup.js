@@ -157,13 +157,20 @@ $(function() {
 	//弹幕详细内容
 	$("#tab1 li").click(function(){
 		let dmImg =  $(this).children().prop("tagName");
-		$(".amplification").css("width","90%");
+		$(".amplification").css("width","0");
 		$(".dmImgClick").attr("src","");
 		if(dmImg == "IMG"){
-			$(".detail").hide();
 			$("#shade").css("display","flex");
-			$(".amplification").animate({width:'100%'},150).show();
-			$(".dmImgClick").attr("src",$(this).children().attr("src"));
+			$(this).children().css({
+				"position":"fixed",
+				"z-index" : "100"
+				});
+			$(this).children().animate({
+				width:"100%",
+				left:"0",
+				top:"0"
+				},200);
+			
 		}else{
 			$(".amplification").hide();
 			$("#shade").css("display","flex");
@@ -178,6 +185,13 @@ $(function() {
 		if(e.target!=this) return;
 		else {
 		     $("#shade").hide();
+			 $(".dmImg").css({
+			 	"position":"relative",
+			 	"z-index" : "0",
+				width:"",
+				left:"",
+				top:""
+			 	});
 		    }
 		
 	})
