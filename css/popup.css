@@ -131,9 +131,6 @@ ul::-webkit-scrollbar-thumb {
 	bottom: 112px;
 	left: 0;
 	right: 0;
-	bottom: 128px;
-	left: 16px;
-	right: 16px;
 	background-color: #7AD7C6;
 	height: 0;
 	line-height: 32px;
@@ -164,9 +161,6 @@ ul::-webkit-scrollbar-thumb {
 	bottom: 0px;
 	left: 0;
 	right: 0;
-	bottom: 16px;
-	left: 16px;
-	right: 16px;
 	background-color: #FFFFFF;
 }
 
@@ -178,9 +172,6 @@ ul::-webkit-scrollbar-thumb {
 	bottom: 56px;
 	left: 0;
 	right: 0;
-	bottom: 72px;
-	left: 16px;
-	right: 16px;
 	height: 56px;
 }
 
