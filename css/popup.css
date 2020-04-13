@@ -64,7 +64,7 @@ body {
 	padding-left: 8px;
 	outline: none;
 	border: 0;
-	border-radius: 16px 0 0 16px;
+	border-radius: 0;
 	font-size: 13px;
 	color: #707070;
 	background-color: #181818;
@@ -74,7 +74,6 @@ body {
 	width: 33%;
 	height: 32px;
 	background-color: #181818;
-	border-radius: 0 16px 16px 0;
 	color: #707070;
 	padding-left: 8px;
 	line-height: 32px;
@@ -132,6 +131,9 @@ ul::-webkit-scrollbar-thumb {
 	bottom: 112px;
 	left: 0;
 	right: 0;
+	bottom: 128px;
+	left: 16px;
+	right: 16px;
 	background-color: #7AD7C6;
 	height: 0;
 	line-height: 32px;
@@ -162,6 +164,9 @@ ul::-webkit-scrollbar-thumb {
 	bottom: 0px;
 	left: 0;
 	right: 0;
+	bottom: 16px;
+	left: 16px;
+	right: 16px;
 	background-color: #FFFFFF;
 }
 
@@ -173,6 +178,9 @@ ul::-webkit-scrollbar-thumb {
 	bottom: 56px;
 	left: 0;
 	right: 0;
+	bottom: 72px;
+	left: 16px;
+	right: 16px;
 	height: 56px;
 }
 
