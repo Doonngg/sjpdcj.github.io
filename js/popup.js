@@ -1,6 +1,6 @@
 $(function() {
 
-
+	
 
 	// //右键禁用
 	// document.oncontextmenu = function(){
