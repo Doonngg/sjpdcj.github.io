@@ -98,10 +98,9 @@ h1 {
 /*弹幕显示区*/
 ul {
 	position: absolute;
-	top: 64px;
 	right: 0;
 	left: 0;
-	max-height: 456px;
+	max-height: 448px;
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
