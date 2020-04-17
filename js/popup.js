@@ -1,5 +1,6 @@
 $(function() {
-
+	
+	//dmli自适应大小
 	function dmLicss(){
 		if($(window).width() > 320){
 			$(".dmLi").css({
@@ -175,13 +176,13 @@ $(function() {
 		dmLicss();
 
 	});
-
-
-
+	
+	
+	
 	//弹幕详细内容
 	$("#tab1 li").click(function() {
-		let dmImg = $(this).children().prop("tagName");
-		if (dmImg == "IMG") {
+		let dmLi = $(this).children().prop("tagName");
+		if (dmLi == "IMG") {
 			$("#shade").show();
 			$(this).children().css({
 				"position": "fixed",
@@ -195,7 +196,7 @@ $(function() {
 		} else {
 			$("#shade").show();
 			$(".detail").animate({
-				height: '243px'
+				top: '0px'
 			}, 200).show();
 			$(".detailTop").text($(this).find("p").text());
 		}
@@ -207,7 +208,7 @@ $(function() {
 		if (e.target != this) return;
 		else {
 			$("#shade").hide();
-			$(".detail").css("height", "0")
+			$(".detail").css("top", "-243px")
 			$(".dmImg").css({
 				"position": "relative",
 				"z-index": "-1",

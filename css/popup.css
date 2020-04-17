@@ -455,14 +455,16 @@ ul::-webkit-scrollbar-thumb {
 	height: 100%;
 	background-color: rgba(0,0,0,0.7);
 	z-index: 11;
+	overflow: hidden;
 	display: none;
 }
 
 
 /*弹幕详细*/
 .detail{
-	height: 0;
+	height: 243px;
 	position: absolute;
+	top: -243px;
 	width: 100%;
 	background-color: #FFFFFF;
 	z-index: 12;
