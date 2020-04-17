@@ -65,7 +65,7 @@ body {
 	outline: none;
 	border: 0;
 	border-radius: 0;
-	font-size: 13px;
+	font-size: 0.8125rem;
 	color: #707070;
 	background-color: #181818;
 }
@@ -77,7 +77,7 @@ body {
 	color: #707070;
 	padding-left: 8px;
 	line-height: 32px;
-	font-size: 13px;
+	font-size: 0.8125rem;
 }
 #olNum{
 	width: 33%;
@@ -86,7 +86,7 @@ body {
 	color: #707070;
 	line-height: 32px;
 	padding-left: 8px;
-	font-size: 13px;
+	font-size: 0.8125rem;
 }
 h1 {
 	font-size: 1.5rem;
@@ -96,7 +96,7 @@ h1 {
 
 
 /*弹幕显示区*/
-ul {
+#tab1 {
 	position: absolute;
 	right: 0;
 	left: 0;
@@ -104,10 +104,6 @@ ul {
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
-}
-
-
-#tab1 {
 	top: 0px;
 	padding: 0;
 	display: flex;
@@ -182,7 +178,7 @@ ul::-webkit-scrollbar-thumb {
 	border-radius: 0;
 	resize: none;
 	outline: none;
-	font-size: 14px;
+	font-size: 0.875rem;
 	text-align: center;
 	line-height: 56px;
 	color: #707070;
@@ -265,7 +261,6 @@ ul::-webkit-scrollbar-thumb {
 	 rgba(0, 0, 0, 0) 1px), 
 	 linear-gradient(360deg,rgb(24,24,24) 1px, 
 	 rgba(0, 0, 0, 0) 1px);
-	background-size: 106px 106px;
 	width: 106px;
 	height: 106px;
 	display: flex;
@@ -301,7 +296,7 @@ ul::-webkit-scrollbar-thumb {
 .dmTime,
 .dmId {
 	color: #707070;
-	font-size: 12px;
+	font-size: 0.75rem;
 	margin-top: 8px;
 }
 
@@ -309,7 +304,7 @@ ul::-webkit-scrollbar-thumb {
 .dmText {
 	width: 100%;
 	padding: 8px;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #D3D3D3;
 	text-align: left;
 }
@@ -349,13 +344,13 @@ ul::-webkit-scrollbar-thumb {
 }
 
 #tishi {
-	font-size: 16px;
+	font-size: 1rem;
 	color: #707070;
 	margin-left: 8px;
 }
 
 #suihe {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	color: #707070;
 	margin-left: 16px;
 	margin-top: 16px;
@@ -367,13 +362,13 @@ ul::-webkit-scrollbar-thumb {
 
 /*昵称*/
 #id {
-	font-size: 18px;
+	font-size: 1.125rem;
 	color: #fff;
 }
 
 /*邮箱*/
 #mail {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	color: #fff;
 }
 
@@ -411,7 +406,7 @@ ul::-webkit-scrollbar-thumb {
 #num2,
 #num3 {
 	margin-left: 6px;
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: 400;
 }
 
@@ -432,7 +427,7 @@ ul::-webkit-scrollbar-thumb {
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 #idSet:hover {
@@ -445,7 +440,7 @@ ul::-webkit-scrollbar-thumb {
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 #set:hover {
@@ -476,7 +471,7 @@ ul::-webkit-scrollbar-thumb {
 }
 .detailTop{
 	padding: 16px;
-	font-size: 16px;
+	font-size: 1rem;
 	width: 100%;
 	height: 160px;
 	color: #FFFFFF;
@@ -494,7 +489,7 @@ ul::-webkit-scrollbar-thumb {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 8px;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 .detailBottom1 a{
 	text-decoration: none;
@@ -507,7 +502,7 @@ ul::-webkit-scrollbar-thumb {
 	flex-direction: row;
 	padding: 8px;
 	align-items: center;
-	font-size: 16px;
+	font-size: 1rem;
 }
 #detailTx{
 	width: 32px;

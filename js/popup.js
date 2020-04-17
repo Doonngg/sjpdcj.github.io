@@ -1,7 +1,17 @@
 $(function() {
 
-	
-
+	function dmLicss(){
+		if($(window).width() > 320){
+			$(".dmLi").css({
+				"width":parseInt($(window).width()/3)-0.6,
+				"height":parseInt($(window).width()/3)-0.6
+				});
+			$("#tab1").css("maxHeight",parseInt($(window).height()-112));
+		}else{
+			return;
+		}
+	}
+	dmLicss();
 	// //右键禁用
 	// document.oncontextmenu = function(){
 	//     event.returnValue = false;
@@ -161,6 +171,8 @@ $(function() {
 			console.log("举报");
 		});
 
+
+		dmLicss();
 
 	});
 
