@@ -183,7 +183,7 @@ $(function() {
 		} else {
 			$("#shade").show();
 			$(".detail").animate({
-				height: '243px'
+				top: '0px'
 			}, 200).show();
 			$(".detailTop").text($(this).find("p").text());
 		}
@@ -195,7 +195,7 @@ $(function() {
 		if (e.target != this) return;
 		else {
 			$("#shade").hide();
-			$(".detail").css("height", "0")
+			$(".detail").css("top", "-243px")
 			$(".dmImg").css({
 				"position": "relative",
 				"z-index": "-1",
