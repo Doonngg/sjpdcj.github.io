@@ -172,7 +172,7 @@ $(function() {
 		if (dmImg == "IMG") {
 			$("#shade").show();
 			$(this).children().css({
-				"position": "fixed",
+				"position": "absolute",
 				"z-index": "100"
 			});
 			$(this).children().animate({
